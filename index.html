@@ -10,10 +10,14 @@
     
     <div class="content-all">
       <div class="video">
-        <video autoplay loop id="video-background">
-          <source src="https://drive.google.com/file/d/0B9RvekUW6TOka3NrUEg0Qk1oekE/view?usp=sharing" type="video/mp4">
-          <iframe src="https://player.vimeo.com/video/218708665" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </video>
+        <!--<video autoplay loop id="video-background">
+          <iframe src="https://drive.google.com/file/d/0B9RvekUW6TOka3NrUEg0Qk1oekE/preview" width="640" height="480"></iframe>
+        </video>-->
+        <div id="vid-back">
+          <div  id="responsive-vid">
+            <iframe min-width="100%" min-height="100%" src="https://www.youtube-nocookie.com/embed/TI-5hcSEfeI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
         <script type="text/javascript" src="function.js"></script>
       </div>
@@ -25,10 +29,10 @@
                 <div class="flex-dis">
                   <h2 id="int-cent">Webinar with Power Solutions Architect </h2>
                   <h2 id="int-cent"><img width="33" height="35" src="https://photos-3.dropbox.com/t/2/AAC_xm9ogh4ZY0kyf5zGWEVvbPEvpuN8RbPS5B3jahAmbg/12/579072691/png/32x32/1/_/1/2/bcalendar.png/EPzogdQEGMSpAyACKAI/YPdS7Q8JOG5NPjYHzUIX0mWQGUh2XqCrccaiCnNs45o?size=1600x1200&size_mode=3" alt="bcalender"/>     Wednesday, June 7, 2017</h2>
-                  <h2  class="" id="int-cent"><img width="35" height="35" src="https://photos-1.dropbox.com/t/2/AACuX4pn4nE_MBUGQ9d_TTvcPVXkd35FJqQ2wwwqa22cYQ/12/579072691/png/32x32/1/_/1/2/bclock.png/EPzogdQEGMSpAyACKAI/f3FGtBc2FGVCzb-rNzPOu8norsRxWlXT389bpPVoy2s?size=1600x1200&size_mode=3" alt="bclock"/>    1pm ET | 11am MT | 10am PT</h2>
-                  <h3  class="title-pe" id="int-cent">Win more jobs by providing solar powered wireless surveillance systems!</h3>
-                  <p id="int-cent">Josh has designed solar solutions for systems integrators around the world.  These solutions are built for plug & play installation. </p>
-                  <p id="int-cent">Join Mr. Brunson as he demonstrates how to utilize these plug & play power solutions for any outdoor scenario. </p>
+                  <h2  class=""  id="int-cent"><img width="35" height="35" src="https://photos-1.dropbox.com/t/2/AACuX4pn4nE_MBUGQ9d_TTvcPVXkd35FJqQ2wwwqa22cYQ/12/579072691/png/32x32/1/_/1/2/bclock.png/EPzogdQEGMSpAyACKAI/f3FGtBc2FGVCzb-rNzPOu8norsRxWlXT389bpPVoy2s?size=1600x1200&size_mode=3" alt="bclock"/>    1pm ET | 11am MT | 10am PT</h2>
+                  <h3  class="title-pe">Win more jobs by providing solar powered wireless surveillance systems!</h3>
+                  <p>Josh has designed solar solutions for systems integrators around the world.  These solutions are built for plug & play installation. </p>
+                  <p>Join Mr. Brunson as he demonstrates how to utilize these plug & play power solutions for any outdoor scenario. </p>
                   <h3 class="title-pe">In this webinar, Josh will share:</h3>
                   <ul>
                     <li>Installing surveillance systems where AC power is</li>
@@ -41,9 +45,9 @@
                     <li>How to appropriately size a solar solution depending on the location of the installation</li>
                     <li>How to remotely control the entire system to eliminate on-site troubleshooting</li>
                   </ul>
-                  <h3 class="title-pe" id="int-cent">If you have any questions you’d like Josh to answer in the webinar please submit in the form below. </h3>
-                  <h3 class="int-cent" id="red-text">To register, please fill out the form </h3> 
-                  <h3 class="int-cent"  id="red-text">Can’t make it? Register anyway and we’ll send you the recording.</h3>
+                  <h3 class="title-pe">If you have any questions you’d like Josh to answer in the webinar please submit in the form below. </h3>
+                  <h3 id="red-text">To register, please fill out the form </h3> 
+                  <h3 id="red-text">Can’t make it? Register anyway and we’ll send you the recording.</h3>
                 </div>    
               </div>
 
@@ -58,7 +62,7 @@
                     <figcaption>
                       <h3 class="title-pe">Business and Product Development at Vorp Energy</h3>
                         <p>Josh works with manufacturers of surveillance & wireless equipment to provide power solutions for systems integrators.</p>
-                    </figcaption><a href="#"></a>
+                    </figcaption><a href="https://www.linkedin.com/in/joshua-brunson-72b24188/"></a>
                   </figure>
                 </div>
 
@@ -73,7 +77,7 @@
                     <figcaption>
                       <h3 class="title-pe">Marketing Guru & Business Development Expert</h3>
                         <p>Shaun leads the marketing team at Vorp Energy and connects systems integrators with solutions architects.</p>
-                    </figcaption><a href="#"></a>
+                    </figcaption><a href="https://www.linkedin.com/in/shaunnolananderson/"></a>
                   </figure>
                 </div>
               </div>
@@ -90,7 +94,7 @@
                 <!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
                 <div class="zf-templateWrapper">
                   <!---------template Header Starts Here---------->
-                  <ul class="zf-tempHeadBdr">
+                  <ul class="zf-tempHeadBdr" id="no-bullets">
                     <li class="zf-tempHeadContBdr">
                       <div class="zf-clearBoth"></div>
                     </li>
@@ -98,7 +102,7 @@
                   <!---------template Header Ends Here---------->
                   <!---------template Container Starts Here---------->
                   <div class="zf-subContWrap zf-topAlign">
-                    <ul>
+                    <ul id="no-bullets">
                       <!---------Single Line Starts Here---------->
                       <li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName">Company Name
           <em class="zf-important">*</em>
@@ -146,7 +150,7 @@
                     </ul>
                   </div>
                   <!---------template Container Starts Here---------->
-                  <ul>
+                  <ul id="no-bullets">
                     <li class="zf-fmFooter"><button class="zf-submitColor">Submit</button></li>
                   </ul>
                 </div>
